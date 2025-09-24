@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dimitri Schumilow · Perfil Profesional</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #e1e5e9;
+      background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+      min-height: 100vh;
+    }
+
+    /* Header mejorado */
+    header {
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(45deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+      z-index: -1;
+    }
+
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header img {
+      border-radius: 20px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 2rem;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, #fff, #e0e0e0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Contenedor principal */
+    main {
+      max-width: 1200px;
+      margin: -2rem auto 0;
+      padding: 0 2rem 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Estilos generales para secciones */
+    section {
+      background: linear-gradient(135deg, #1e1e3f 0%, #2d2d5a 100%);
+      margin-bottom: 2rem;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(102, 126, 234, 0.2);
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Títulos de sección */
+    h2 {
+      color: #e1e5e9;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      border-radius: 2px;
+    }
+
+    /* Cards grid para contenido */
+    .content-grid {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .content-card {
+      background: linear-gradient(135deg, #252550 0%, #2d2d5a 100%);
+      border: 1px solid rgba(102, 126, 234, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .content-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+      border-color: #667eea;
+      background: linear-gradient(135deg, #2a2a55 0%, #32325f 100%);
+    }
+
+    .content-card h3 {
+      color: #e1e5e9;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .content-card .subtitle {
+      color: #a8b2c8;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .content-card .period {
+      color: #667eea;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    /* Timeline mejorado */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, #667eea, #764ba2);
+      border-radius: 2px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+      padding-left: 2rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -1.5rem;
+      top: 0.5rem;
+      width: 12px;
+      height: 12px;
+      background: #667eea;
+      border: 3px solid white;
+      border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .timeline-item .icon {
+      position: absolute;
+      left: -2.2rem;
+      top: 0.2rem;
+      font-size: 1.2rem;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Estilos para contacto y enlaces */
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: linear-gradient(135deg, #252550 0%, #2d2d5a 100%);
+      border: 1px solid rgba(102, 126, 234, 0.3);
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-item:hover {
+      background: linear-gradient(135deg, #2a2a55 0%, #32325f 100%);
+      transform: translateX(5px);
+      border-color: #667eea;
+    }
+
+    .contact-icon {
+      font-size: 1.5rem;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      color: white;
+      border-radius: 10px;
+    }
+
+    /* Links mejorados */
+    a {
+      color: #667eea;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: #764ba2;
+      text-decoration: underline;
+    }
+
+    /* Botones */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1.5rem;
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Skills tags */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .skill-tag {
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: transform 0.3s ease;
+    }
+
+    .skill-tag:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer mejorado */
+    footer {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #e1e5e9;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      border-top: 1px solid rgba(102, 126, 234, 0.3);
+    }
+
+    /* Video responsive */
+    .video-container {
+      position: relative;
+      max-width: 400px;
+      margin: 2rem auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    iframe {
+      border-radius: 15px;
+    }
+
+    /* Estilos para la línea de tiempo */
+    .timeline {
+      position: relative;
+      margin-left: 0;
+      padding-left: 32px;
+      border-left: 4px solid #007acc;
+    }
+
+    .entry {
+      position: relative;
+      margin-bottom: 2em;
+      padding-left: 16px;
+    }
+
+    .entry::before {
+      content: '';
+      position: absolute;
+      left: -28px;
+      top: 0.6em;
+      width: 18px;
+      height: 18px;
+      background: #252550;
+      border: 3px solid #667eea;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .entry h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #007acc;
+    }
+
+    .entry p {
+      margin: 0.2rem 0;
+    }
+
+    .entry span {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Estilos para la sección de proyectos */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .project-card {
+      background: linear-gradient(135deg, #252550 0%, #2d2d5a 100%);
+      border: 1px solid rgba(102, 126, 234, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+      background: linear-gradient(135deg, #2a2a55 0%, #32325f 100%);
+      border-color: #667eea;
+    }
+
+    .project-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .project-title {
+      color: #e1e5e9;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-subtitle {
+      color: #a8b2c8;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .project-description {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tech-tag {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border: 1px solid rgba(102, 126, 234, 0.3);
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .project-link:hover {
+      background: #005a99;
+      text-decoration: none;
+    }
+
+    .project-link.secondary {
+      background: #666;
+    }
+
+    .project-link.secondary:hover {
+      background: #555;
+    }
+
+    /* Navegación mejorada */
+    nav {
+      background: linear-gradient(135deg, #1e1e3f 0%, #2d2d5a 100%);
+      border: 1px solid rgba(102, 126, 234, 0.3);
+      border-radius: 50px;
+      padding: 1rem 2rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      position: sticky;
+      top: 2rem;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      display: inline-block;
+      font-weight: 500;
+      color: #e1e5e9;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      color: white;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1.1rem;
+      }
+
+      main {
+        padding: 0 1rem 2rem;
+      }
+
+      section {
+        padding: 2rem;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        padding: 1rem;
+      }
+
+      nav a {
+        margin: 0.5rem;
+        font-size: 0.9rem;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="header-content">
+      <img src="foto_pagina web.png" alt="Foto de Dimitri Schumilow">
+      <h1>Dimitri Schumilow</h1>
+      <p>Ingeniero Civil Industrial · Analista de Datos · Científico de Datos en Formación</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Navegación moderna -->
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#educacion">Educación</a>
+      <a href="#certificaciones">Certificaciones</a>
+      <a href="#habilidades-tecnicas">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+    </nav>
+
+    <section id="sobre-mi">
+      <h2>👋 Sobre mí</h2>
+      <div class="content-grid">
+        <div class="content-card">
+          <h3>🎯 Perfil Profesional</h3>
+          <p>Ingeniero Civil Industrial con <strong>6 años de experiencia</strong>, 4 de ellos en el rubro de la
+            construcción.
+            Apasionado por el análisis de datos y su aplicación en la toma de decisiones estratégicas.</p>
+        </div>
+        <div class="content-card">
+          <h3>🚀 Especialización Actual</h3>
+          <p>Me especializo en liderar equipos, coordinar proyectos y vincular áreas técnicas y comerciales,
+            promoviendo siempre la colaboración y la eficiencia operativa.</p>
+        </div>
+        <div class="content-card">
+          <h3>📚 Formación Continua</h3>
+          <p>Actualmente me encuentro formándome como <strong>científico de datos</strong> y aprendiendo
+            continuamente sobre inteligencia artificial y tecnologías emergentes.</p>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <iframe width="360" height="640" src="https://www.youtube.com/embed/p4hZwujbz3c" title="Video presentación"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>📞 Contacto</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <strong>Email</strong><br>
+            <a href="mailto:dimitrischumilow@gmail.com">dimitrischumilow@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <strong>Teléfono</strong><br>
+            <a href="tel:+56989036081">(+56) 9 89036081</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">💼</div>
+          <div>
+            <strong>LinkedIn</strong><br>
+            <a href="https://www.linkedin.com/in/dschumilow/" target="_blank">linkedin.com/in/dschumilow</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🐱</div>
+          <div>
+            <strong>GitHub</strong><br>
+            <a href="https://github.com/dschumilow" target="_blank">github.com/dschumilow</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="mailto:dimitrischumilow@gmail.com" class="btn">
+          📧 Contactar por Email
+        </a>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <h2>💼 Experiencia Profesional</h2>
+      <div class="content-grid">
+
+        <div class="content-card">
+          <h3>Jefe de Producción</h3>
+          <div class="subtitle">TWH</div>
+          <div class="period">📅 Mar 2025 – Jun 2025</div>
+          <p>Coordinación de proyectos en planta, supervisión de operarios y contratistas, implementación de mejoras
+            productivas y controles de calidad.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Gestión de Equipos</span>
+            <span class="skill-tag">Mejora Continua</span>
+            <span class="skill-tag">Control de Calidad</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Analista de Operaciones</h3>
+          <div class="subtitle">Ecometro Urbanismo S.A.</div>
+          <div class="period">📅 Jul 2024 – Mar 2025</div>
+          <p>Optimización de procesos en gestión de residuos, elaboración de informes, licitaciones
+            técnico-financieras
+            y control de gastos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Análisis de Datos</span>
+            <span class="skill-tag">Optimización</span>
+            <span class="skill-tag">Licitaciones</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Servicios Independientes</h3>
+          <div class="subtitle">Ingeniería, construcción y asesorías</div>
+          <div class="period">📅 Jun 2023 – May 2024</div>
+          <p>Presupuestos, cubicaciones, planificación y remodelaciones. Proyectos destacados: Puerto Octay, Las
+            Trancas,
+            Cristal de Abelli.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Gestión de Proyectos</span>
+            <span class="skill-tag">Presupuestos</span>
+            <span class="skill-tag">Planificación</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Jefe de Planta</h3>
+          <div class="subtitle">Indama – Smartis</div>
+          <div class="period">📅 Nov 2021 – Feb 2023</div>
+          <p>Gestión integral de planta modular, liderazgo de equipos, puesta en marcha de nueva planta en Santiago y
+            participación en feria Edifica.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Liderazgo</span>
+            <span class="skill-tag">Puesta en Marcha</span>
+            <span class="skill-tag">Gestión Integral</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Administrador de Obra</h3>
+          <div class="subtitle">Solar Construcción y Arquitectura Ltda.</div>
+          <div class="period">📅 Ago 2020 – Nov 2021</div>
+          <p>Supervisión de obras, elaboración de presupuestos, coordinación con clientes e ITO, liderazgo de equipos.
+          </p>
+          <div class="skills-container">
+            <span class="skill-tag">Supervisión</span>
+            <span class="skill-tag">Presupuestos</span>
+            <span class="skill-tag">Coordinación</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Jefe de Obra</h3>
+          <div class="subtitle">Proyecto Casa LEE</div>
+          <div class="period">📅 May 2019 – Mar 2020</div>
+          <p>Dirección completa de obra residencial, coordinación de equipos y cumplimiento de cronograma.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Dirección de Obra</span>
+            <span class="skill-tag">Coordinación</span>
+            <span class="skill-tag">Cronogramas</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Consultor Independiente</h3>
+          <div class="subtitle">Chocolates Providencia S.A.</div>
+          <div class="period">📅 Abr 2019</div>
+          <p>Análisis de eficiencia productiva, identificación de pérdidas y propuesta de mejoras en inventario.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Análisis de Procesos</span>
+            <span class="skill-tag">Eficiencia</span>
+            <span class="skill-tag">Consultoría</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Experiencia Internacional</h3>
+          <div class="subtitle">Australia - Working Holiday Visa</div>
+          <div class="period">📅 Ago 2017 – Mar 2019</div>
+          <p>Perfeccionamiento de inglés y experiencia laboral multicultural en construcción, eventos y gastronomía.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Inglés Avanzado</span>
+            <span class="skill-tag">Adaptabilidad</span>
+            <span class="skill-tag">Multiculturalidad</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Ejecutivo de Cuentas</h3>
+          <div class="subtitle">Banco de Chile</div>
+          <div class="period">📅 Ene 2017 – Jul 2017</div>
+          <p>Gestión de cartera de clientes en banca privada, asesoría financiera y cumplimiento de metas comerciales.
+          </p>
+          <div class="skills-container">
+            <span class="skill-tag">Banca Privada</span>
+            <span class="skill-tag">Asesoría Financiera</span>
+            <span class="skill-tag">Gestión Comercial</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Formación Práctica Universitaria</h3>
+          <div class="subtitle">Prácticas Profesionales y Ayudantías</div>
+          <div class="period">📅 2013 – 2015</div>
+          <p><strong>Práctica II:</strong> Collico S.A. (Analista Comercial) • <strong>Práctica I:</strong> Kaufmann
+            S.A. (Pañol) •
+            <strong>Ayudante:</strong> Química - Universidad del Desarrollo
+          </p>
+          <div class="skills-container">
+            <span class="skill-tag">Análisis Comercial</span>
+            <span class="skill-tag">Logística</span>
+            <span class="skill-tag">Docencia</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="educacion">
+      <h2>🎓 Educación</h2>
+      <div class="content-grid">
+
+        <div class="content-card">
+          <h3>🏛️ Educación Superior</h3>
+          <div class="subtitle">Universidad del Desarrollo</div>
+          <div class="period">📅 2010 – 2016</div>
+          <p><strong>Ingeniero Civil Industrial</strong></p>
+          <p>Formación integral en gestión de operaciones, optimización de procesos, análisis de datos y liderazgo
+            empresarial.
+            Especialización en vinculación de áreas técnicas y comerciales.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Gestión Industrial</span>
+            <span class="skill-tag">Optimización</span>
+            <span class="skill-tag">Análisis de Datos</span>
+            <span class="skill-tag">Liderazgo</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🏫 Educación Básica y Media</h3>
+          <div class="subtitle">Colegio Alcázar de Las Condes</div>
+          <div class="period">📅 1995 – 2009</div>
+          <p><strong>Enseñanza Básica y Media Completa</strong></p>
+          <p>Formación académica integral con énfasis en ciencias exactas y desarrollo de competencias de liderazgo y
+            trabajo en equipo.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Formación Integral</span>
+            <span class="skill-tag">Ciencias</span>
+            <span class="skill-tag">Liderazgo Escolar</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="certificaciones">
+      <h2>🏆 Certificaciones</h2>
+      <div class="content-grid">
+
+        <div class="content-card" style="border-left: 4px solid #ff6b6b;">
+          <h3>🤖 Fundamentos de Inteligencia Artificial</h3>
+          <div class="subtitle">Guayerd & IBM</div>
+          <div class="period">📅 Sept 2025 – Actualidad</div>
+          <p>Formación avanzada en conceptos fundamentales de IA, machine learning, y aplicaciones empresariales de
+            inteligencia artificial.</p>
+          <div class="skills-container">
+            <span class="skill-tag">IA</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">IBM Watson</span>
+          </div>
+        </div>
+
+        <div class="content-card" style="border-left: 4px solid #4ecdc4;">
+          <h3>📊 Data Science</h3>
+          <div class="subtitle">Beca Talento Digital SENCE</div>
+          <div class="period">📅 Jun 2025 – Sept 2025</div>
+          <p>Programa integral de formación en ciencia de datos, incluyendo Python, machine learning, análisis
+            estadístico y visualización de datos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">ML</span>
+            <span class="skill-tag">Estadística</span>
+            <span class="skill-tag">Visualización</span>
+          </div>
+        </div>
+
+        <div class="content-card" style="border-left: 4px solid #45b7d1;">
+          <h3>📈 Fundamentos Data Analytics</h3>
+          <div class="subtitle">Guayerd & IBM</div>
+          <div class="period">📅 Jul 2024 – Nov 2024</div>
+          <p>Certificación en análisis de datos, herramientas de visualización y metodologías para la toma de decisiones
+            basada en datos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Analytics</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Data Visualization</span>
+          </div>
+        </div>
+
+        <div class="content-card" style="border-left: 4px solid #96ceb4;">
+          <h3>📋 Excel Avanzado</h3>
+          <div class="subtitle">Certificación Profesional</div>
+          <div class="period">📅 2015</div>
+          <p>Dominio avanzado de Excel incluyendo macros, análisis de datos, tablas dinámicas y automatización de
+            procesos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">Macros</span>
+            <span class="skill-tag">Automatización</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="habilidades-tecnicas">
+      <h2>💻 Habilidades Técnicas</h2>
+      <div class="content-grid">
+
+        <div class="content-card">
+          <h3>🐍 Lenguajes de Programación</h3>
+          <p>Dominio de lenguajes especializados en análisis de datos y desarrollo de aplicaciones.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>📊 Herramientas de Análisis</h3>
+          <p>Plataformas profesionales para procesamiento, análisis y visualización de datos empresariales.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Excel Avanzado</span>
+            <span class="skill-tag">Power Query</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Looker Studio</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🔧 Desarrollo y Productividad</h3>
+          <p>Entornos de desarrollo y herramientas de productividad para gestión de proyectos técnicos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Visual Studio Code</span>
+            <span class="skill-tag">Jupyter Notebooks</span>
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">Office 365</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🤖 Machine Learning & IA</h3>
+          <p>Frameworks y librerías especializadas en inteligencia artificial y análisis predictivo.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Matplotlib</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="habilidades-profesionales">
+      <h2>🌟 Competencias y Habilidades Personales</h2>
+      <div class="content-grid">
+
+        <div class="content-card">
+          <h3>🌍 Idiomas</h3>
+          <p>Competencias lingüísticas que facilitan la comunicación en entornos multiculturales.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Español (Nativo)</span>
+            <span class="skill-tag">Inglés (B2-B1)</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🤝 Competencias Profesionales</h3>
+          <p>Habilidades blandas desarrolladas a través de experiencia práctica en liderazgo y gestión de equipos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Comunicación Efectiva</span>
+            <span class="skill-tag">Trabajo en Equipo</span>
+            <span class="skill-tag">Liderazgo</span>
+            <span class="skill-tag">Pensamiento Estratégico</span>
+            <span class="skill-tag">Gestión del Tiempo</span>
+            <span class="skill-tag">Aprendizaje Continuo</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🏃‍♂️ Deportes y Actividades</h3>
+          <p>Actividades que desarrollan disciplina, estrategia y trabajo en equipo.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Tenis</span>
+            <span class="skill-tag">Deportes Náuticos</span>
+            <span class="skill-tag">Actividad Física</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🎯 Intereses Personales</h3>
+          <p>Áreas de interés que complementan el perfil profesional y fomentan la creatividad.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Gastronomía</span>
+            <span class="skill-tag">Mecánica Automotriz</span>
+            <span class="skill-tag">Construcción</span>
+            <span class="skill-tag">Desarrollo Personal</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>🚀 Proyectos de Ciencia de Datos</h2>
+      <p>Portafolio completo de proyectos desarrollados aplicando <strong>Machine Learning</strong>, <strong>Deep
+          Learning</strong>
+        y técnicas avanzadas de análisis de datos. Cada proyecto incluye documentación técnica completa y código
+        reproducible.</p>
+
+      <div class="projects-grid">
+
+        <!-- Proyecto 1: ML No Supervisado -->
+        <div class="project-card">
+          <span class="project-icon">🎵</span>
+          <h3 class="project-title">Análisis de Clustering Musical</h3>
+          <p class="project-subtitle">Machine Learning No Supervisado</p>
+          <p class="project-description">
+            Agrupamiento de países por preferencias musicales utilizando algoritmos de clustering avanzados.
+            Implementación de K-Means, clustering jerárquico y DBSCAN con técnicas de reducción de dimensionalidad (PCA,
+            t-SNE).
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">K-Means</span>
+            <span class="tech-tag">PCA</span>
+            <span class="tech-tag">t-SNE</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital/tree/main/ML_NO_SUPERVISADO" target="_blank"
+              class="project-link">
+              📂 Ver Código
+            </a>
+            <a href="https://github.com/dschumilow/portafolio_digital/blob/main/ML_NO_SUPERVISADO/README.md"
+              target="_blank" class="project-link secondary">
+              📖 Documentación
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyecto 2: Redes Neuronales -->
+        <div class="project-card">
+          <span class="project-icon">🧠</span>
+          <h3 class="project-title">Análisis de Sentimientos IMDB</h3>
+          <p class="project-subtitle">Deep Learning - Redes Neuronales Recurrentes</p>
+          <p class="project-description">
+            Sistema de clasificación automática de sentimientos en reseñas de películas utilizando RNN.
+            Procesamiento de 50,000 reseñas con arquitectura optimizada de redes neuronales recurrentes.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Keras</span>
+            <span class="tech-tag">RNN</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">Word Embeddings</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital/tree/main/RED%20NEURONAL" target="_blank"
+              class="project-link">
+              📂 Ver Código
+            </a>
+            <a href="https://github.com/dschumilow/portafolio_digital/blob/main/RED%20NEURONAL/README.md"
+              target="_blank" class="project-link secondary">
+              📖 Documentación
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyecto 3: Estadística Inferencial -->
+        <div class="project-card">
+          <span class="project-icon">📈</span>
+          <h3 class="project-title">Teoremas Estadísticos Fundamentales</h3>
+          <p class="project-subtitle">Estadística Inferencial</p>
+          <p class="project-description">
+            Demostración práctica de la Ley de Grandes Números y Teorema del Límite Central mediante simulaciones
+            computacionales.
+            Validación empírica de teoremas fundamentales de la estadística.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Matplotlib</span>
+            <span class="tech-tag">Simulación</span>
+            <span class="tech-tag">Estadística</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital/tree/main/ESTADISTICA%20INFERENCIAL"
+              target="_blank" class="project-link">
+              📂 Ver Código
+            </a>
+            <a href="https://github.com/dschumilow/portafolio_digital/blob/main/ESTADISTICA%20INFERENCIAL/README.md"
+              target="_blank" class="project-link secondary">
+              📖 Documentación
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyecto 4: ETL -->
+        <div class="project-card">
+          <span class="project-icon">🔄</span>
+          <h3 class="project-title">Pipeline ETL Automatizado</h3>
+          <p class="project-subtitle">Ingeniería de Datos</p>
+          <p class="project-description">
+            Sistema completo de Extract, Transform, Load para procesamiento automatizado de datos empresariales.
+            Pipeline robusto con validaciones y transformaciones de calidad de datos.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">ETL</span>
+            <span class="tech-tag">Data Quality</span>
+            <span class="tech-tag">Automatización</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital/tree/main/ETL" target="_blank"
+              class="project-link">
+              📂 Ver Código
+            </a>
+            <a href="https://github.com/dschumilow/portafolio_digital/blob/main/ETL/README.md" target="_blank"
+              class="project-link secondary">
+              📖 Documentación
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyecto 5: ML Supervisado -->
+        <div class="project-card">
+          <span class="project-icon">🤖</span>
+          <h3 class="project-title">Machine Learning Supervisado</h3>
+          <p class="project-subtitle">Modelos Predictivos</p>
+          <p class="project-description">
+            Desarrollo de modelos predictivos para clasificación y regresión con optimización de hiperparámetros.
+            Aplicación de algoritmos supervisados para problemas empresariales reales.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Random Forest</span>
+            <span class="tech-tag">SVM</span>
+            <span class="tech-tag">Cross-Validation</span>
+            <span class="tech-tag">Feature Engineering</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital/tree/main/ML" target="_blank"
+              class="project-link">
+              📂 Ver Código
+            </a>
+            <a href="https://github.com/dschumilow/portafolio_digital/blob/main/ML/README.md" target="_blank"
+              class="project-link secondary">
+              📖 Documentación
+            </a>
+          </div>
+        </div>
+
+        <!-- Repositorio Principal -->
+        <div class="project-card"
+          style="border: 2px solid #007acc; background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);">
+          <span class="project-icon">🚀</span>
+          <h3 class="project-title">Portafolio Completo</h3>
+          <p class="project-subtitle">Repositorio Principal en GitHub</p>
+          <p class="project-description">
+            <strong>Accede al repositorio completo</strong> con todos los proyectos, documentación técnica,
+            notebooks interactivos y código fuente. Incluye README principal con metodología y competencias
+            desarrolladas.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">GitHub</span>
+            <span class="tech-tag">Jupyter</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Data Science</span>
+            <span class="tech-tag">Portfolio</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital" target="_blank" class="project-link"
+              style="background: #28a745;">
+              🌟 Ver Portafolio Completo
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Dimitri Schumilow · Datos con propósito y visión interdisciplinaria
+  </footer>
+
+</body>
+
+</html>
