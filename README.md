@@ -246,8 +246,8 @@ portafolio_digital/
 ## 📞 Contacto y Colaboración
 
 **Dimitri Schumilow**  
-📧 Email: [tu-email@dominio.com]  
-💼 LinkedIn: [linkedin.com/in/tu-perfil]  
+📧 Email: [dimitrischumilow@gmail.com]  
+💼 LinkedIn: [linkedin.com/in/dschumilow]  
 🌐 Portfolio Web: [tu-sitio-web.com]  
 📱 GitHub: [@dschumilow](https://github.com/dschumilow)
 
