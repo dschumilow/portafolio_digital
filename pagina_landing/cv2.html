@@ -125,6 +125,102 @@
     nav a {
       margin: 0 0.5rem;
     }
+
+    /* Estilos para la sección de proyectos */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .project-card {
+      background: #f9f9f9;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .project-title {
+      color: #1e1e1e;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-subtitle {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .project-description {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tech-tag {
+      background: #007acc;
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .project-link:hover {
+      background: #005a99;
+      text-decoration: none;
+    }
+
+    .project-link.secondary {
+      background: #666;
+    }
+
+    .project-link.secondary:hover {
+      background: #555;
+    }
   </style>
 </head>
 
@@ -143,6 +239,7 @@
     <!-- Índice de navegación -->
     <nav style="margin-bottom:2rem; background:#f4f4f4; border-radius:8px; padding:1em; text-align:center;">
       <a href="#sobre-mi">Sobre mí</a> |
+      <a href="#proyectos">Proyectos</a> |
       <a href="#contacto">Contacto</a> |
       <a href="#experiencia">Experiencia</a> |
       <a href="#educacion">Educación</a> |
@@ -162,6 +259,193 @@
           title="Video presentación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos de Ciencia de Datos</h2>
+      <p>Portafolio completo de proyectos desarrollados aplicando <strong>Machine Learning</strong>, <strong>Deep Learning</strong> 
+         y técnicas avanzadas de análisis de datos. Cada proyecto incluye documentación técnica completa y código reproducible.</p>
+      
+      <div class="projects-grid">
+        
+        <!-- Proyecto 1: ML No Supervisado -->
+        <div class="project-card">
+          <span class="project-icon">🎵</span>
+          <h3 class="project-title">Análisis de Clustering Musical</h3>
+          <p class="project-subtitle">Machine Learning No Supervisado</p>
+          <p class="project-description">
+            Agrupamiento de países por preferencias musicales utilizando algoritmos de clustering avanzados. 
+            Implementación de K-Means, clustering jerárquico y DBSCAN con técnicas de reducción de dimensionalidad (PCA, t-SNE).
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">K-Means</span>
+            <span class="tech-tag">PCA</span>
+            <span class="tech-tag">t-SNE</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital/tree/main/ML_NO_SUPERVISADO" target="_blank" class="project-link">
+              📂 Ver Código
+            </a>
+            <a href="https://github.com/dschumilow/portafolio_digital/blob/main/ML_NO_SUPERVISADO/README.md" target="_blank" class="project-link secondary">
+              📖 Documentación
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyecto 2: Redes Neuronales -->
+        <div class="project-card">
+          <span class="project-icon">🧠</span>
+          <h3 class="project-title">Análisis de Sentimientos IMDB</h3>
+          <p class="project-subtitle">Deep Learning - Redes Neuronales Recurrentes</p>
+          <p class="project-description">
+            Sistema de clasificación automática de sentimientos en reseñas de películas utilizando RNN. 
+            Procesamiento de 50,000 reseñas con arquitectura optimizada de redes neuronales recurrentes.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Keras</span>
+            <span class="tech-tag">RNN</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">Word Embeddings</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital/tree/main/RED%20NEURONAL" target="_blank" class="project-link">
+              📂 Ver Código
+            </a>
+            <a href="https://github.com/dschumilow/portafolio_digital/blob/main/RED%20NEURONAL/README.md" target="_blank" class="project-link secondary">
+              📖 Documentación
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyecto 3: Estadística Inferencial -->
+        <div class="project-card">
+          <span class="project-icon">📈</span>
+          <h3 class="project-title">Teoremas Estadísticos Fundamentales</h3>
+          <p class="project-subtitle">Estadística Inferencial</p>
+          <p class="project-description">
+            Demostración práctica de la Ley de Grandes Números y Teorema del Límite Central mediante simulaciones computacionales. 
+            Validación empírica de teoremas fundamentales de la estadística.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">NumPy</span>
+            <span class="tech-tag">Matplotlib</span>
+            <span class="tech-tag">Simulación</span>
+            <span class="tech-tag">Estadística</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital/tree/main/ESTADISTICA%20INFERENCIAL" target="_blank" class="project-link">
+              📂 Ver Código
+            </a>
+            <a href="https://github.com/dschumilow/portafolio_digital/blob/main/ESTADISTICA%20INFERENCIAL/README.md" target="_blank" class="project-link secondary">
+              📖 Documentación
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyecto 4: ETL -->
+        <div class="project-card">
+          <span class="project-icon">🔄</span>
+          <h3 class="project-title">Pipeline ETL Automatizado</h3>
+          <p class="project-subtitle">Ingeniería de Datos</p>
+          <p class="project-description">
+            Sistema completo de Extract, Transform, Load para procesamiento automatizado de datos empresariales. 
+            Pipeline robusto con validaciones y transformaciones de calidad de datos.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">ETL</span>
+            <span class="tech-tag">Data Quality</span>
+            <span class="tech-tag">Automatización</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital/tree/main/ETL" target="_blank" class="project-link">
+              📂 Ver Código
+            </a>
+            <a href="https://github.com/dschumilow/portafolio_digital/blob/main/ETL/README.md" target="_blank" class="project-link secondary">
+              📖 Documentación
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyecto 5: ML Supervisado -->
+        <div class="project-card">
+          <span class="project-icon">🤖</span>
+          <h3 class="project-title">Machine Learning Supervisado</h3>
+          <p class="project-subtitle">Modelos Predictivos</p>
+          <p class="project-description">
+            Desarrollo de modelos predictivos para clasificación y regresión con optimización de hiperparámetros. 
+            Aplicación de algoritmos supervisados para problemas empresariales reales.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Random Forest</span>
+            <span class="tech-tag">SVM</span>
+            <span class="tech-tag">Cross-Validation</span>
+            <span class="tech-tag">Feature Engineering</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital/tree/main/ML" target="_blank" class="project-link">
+              📂 Ver Código
+            </a>
+            <a href="https://github.com/dschumilow/portafolio_digital/blob/main/ML/README.md" target="_blank" class="project-link secondary">
+              📖 Documentación
+            </a>
+          </div>
+        </div>
+
+        <!-- Repositorio Principal -->
+        <div class="project-card" style="border: 2px solid #007acc; background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);">
+          <span class="project-icon">🚀</span>
+          <h3 class="project-title">Portafolio Completo</h3>
+          <p class="project-subtitle">Repositorio Principal en GitHub</p>
+          <p class="project-description">
+            <strong>Accede al repositorio completo</strong> con todos los proyectos, documentación técnica, 
+            notebooks interactivos y código fuente. Incluye README principal con metodología y competencias desarrolladas.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">GitHub</span>
+            <span class="tech-tag">Jupyter</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Data Science</span>
+            <span class="tech-tag">Portfolio</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/dschumilow/portafolio_digital" target="_blank" class="project-link" style="background: #28a745;">
+              🌟 Ver Portafolio Completo
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sección de competencias técnicas destacadas -->
+      <div style="margin-top: 3rem; padding: 2rem; background: #f0f8ff; border-radius: 12px; border-left: 4px solid #007acc;">
+        <h3 style="margin-top: 0; color: #1e1e1e;">🎯 Competencias Técnicas Demostradas</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+          <div>
+            <strong>🤖 Machine Learning</strong><br>
+            <span style="color: #666; font-size: 0.9rem;">Algoritmos supervisados y no supervisados, validación cruzada, optimización</span>
+          </div>
+          <div>
+            <strong>🧠 Deep Learning</strong><br>
+            <span style="color: #666; font-size: 0.9rem;">Redes neuronales, TensorFlow/Keras, procesamiento de lenguaje natural</span>
+          </div>
+          <div>
+            <strong>📊 Análisis de Datos</strong><br>
+            <span style="color: #666; font-size: 0.9rem;">EDA, visualización avanzada, estadística inferencial</span>
+          </div>
+          <div>
+            <strong>🔧 Ingeniería de Datos</strong><br>
+            <span style="color: #666; font-size: 0.9rem;">ETL, pipeline automatizados, calidad de datos</span>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <section id="contacto">
