@@ -159,10 +159,10 @@ ML_NO_SUPERVISADO/
 
 ---
 
-**Autor**: Daniel Schumilow  
+**Autor**: Dimitri Schumilow  
 **Fecha**: Septiembre 2025  
 **Curso**: Fundamentos de Ciencia de Datos - Machine Learning No Supervisado  
-**Institución**: Universidad de Chile
+**Institución**: Talento Digital
 
 ---
 
