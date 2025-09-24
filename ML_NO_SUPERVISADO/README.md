@@ -159,10 +159,10 @@ ML_NO_SUPERVISADO/
 
 ---
 
-**Autor**: [Tu Nombre]  
+**Autor**: Daniel Schumilow  
 **Fecha**: Septiembre 2025  
 **Curso**: Fundamentos de Ciencia de Datos - Machine Learning No Supervisado  
-**Institución**: [Tu Institución]
+**Institución**: Universidad de Chile
 
 ---
 
