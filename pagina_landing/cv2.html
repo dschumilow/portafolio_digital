@@ -15,8 +15,8 @@
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
-      color: #333;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #e1e5e9;
+      background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
       min-height: 100vh;
     }
 
@@ -93,14 +93,15 @@
 
     /* Estilos generales para secciones */
     section {
-      background: white;
+      background: linear-gradient(135deg, #1e1e3f 0%, #2d2d5a 100%);
       margin-bottom: 2rem;
       border-radius: 16px;
       padding: 2.5rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       position: relative;
       overflow: hidden;
+      border: 1px solid rgba(102, 126, 234, 0.2);
     }
 
     section::before {
@@ -120,7 +121,7 @@
 
     /* Títulos de sección */
     h2 {
-      color: #1e1e1e;
+      color: #e1e5e9;
       font-size: 2.2rem;
       font-weight: 700;
       margin-bottom: 1.5rem;
@@ -147,8 +148,8 @@
     }
 
     .content-card {
-      background: #f8f9fa;
-      border: 1px solid #e9ecef;
+      background: linear-gradient(135deg, #252550 0%, #2d2d5a 100%);
+      border: 1px solid rgba(102, 126, 234, 0.3);
       border-radius: 12px;
       padding: 1.5rem;
       transition: all 0.3s ease;
@@ -157,26 +158,27 @@
 
     .content-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
       border-color: #667eea;
+      background: linear-gradient(135deg, #2a2a55 0%, #32325f 100%);
     }
 
     .content-card h3 {
-      color: #1e1e1e;
+      color: #e1e5e9;
       font-size: 1.3rem;
       margin-bottom: 0.5rem;
       font-weight: 600;
     }
 
     .content-card .subtitle {
-      color: #666;
+      color: #a8b2c8;
       font-size: 0.95rem;
       margin-bottom: 1rem;
       font-style: italic;
     }
 
     .content-card .period {
-      color: #007acc;
+      color: #667eea;
       font-size: 0.9rem;
       font-weight: 500;
       margin-bottom: 1rem;
@@ -243,14 +245,16 @@
       align-items: center;
       gap: 1rem;
       padding: 1rem;
-      background: #f8f9fa;
+      background: linear-gradient(135deg, #252550 0%, #2d2d5a 100%);
+      border: 1px solid rgba(102, 126, 234, 0.3);
       border-radius: 10px;
       transition: all 0.3s ease;
     }
 
     .contact-item:hover {
-      background: #e9ecef;
+      background: linear-gradient(135deg, #2a2a55 0%, #32325f 100%);
       transform: translateX(5px);
+      border-color: #667eea;
     }
 
     .contact-icon {
@@ -325,12 +329,13 @@
 
     /* Footer mejorado */
     footer {
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #e1e5e9;
       text-align: center;
       padding: 2rem;
       margin-top: 3rem;
       font-size: 0.95rem;
+      border-top: 1px solid rgba(102, 126, 234, 0.3);
     }
 
     /* Video responsive */
@@ -368,8 +373,8 @@
       top: 0.6em;
       width: 18px;
       height: 18px;
-      background: #fff;
-      border: 3px solid #007acc;
+      background: #252550;
+      border: 3px solid #667eea;
       border-radius: 50%;
       z-index: 1;
     }
@@ -389,19 +394,6 @@
       color: #666;
     }
 
-    /* Estilos para el menú de navegación */
-    nav {
-      margin-bottom: 2rem;
-      background: #f4f4f4;
-      border-radius: 8px;
-      padding: 1em;
-      text-align: center;
-    }
-
-    nav a {
-      margin: 0 0.5rem;
-    }
-
     /* Estilos para la sección de proyectos */
     .projects-grid {
       display: grid;
@@ -411,8 +403,8 @@
     }
 
     .project-card {
-      background: #f9f9f9;
-      border: 1px solid #e0e0e0;
+      background: linear-gradient(135deg, #252550 0%, #2d2d5a 100%);
+      border: 1px solid rgba(102, 126, 234, 0.3);
       border-radius: 12px;
       padding: 1.5rem;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -421,7 +413,9 @@
 
     .project-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+      background: linear-gradient(135deg, #2a2a55 0%, #32325f 100%);
+      border-color: #667eea;
     }
 
     .project-icon {
@@ -431,14 +425,14 @@
     }
 
     .project-title {
-      color: #1e1e1e;
+      color: #e1e5e9;
       font-size: 1.3rem;
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
 
     .project-subtitle {
-      color: #666;
+      color: #a8b2c8;
       font-size: 0.95rem;
       margin-bottom: 1rem;
       font-style: italic;
@@ -457,12 +451,13 @@
     }
 
     .tech-tag {
-      background: #007acc;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
       padding: 0.3rem 0.8rem;
       border-radius: 15px;
       font-size: 0.8rem;
       font-weight: 500;
+      border: 1px solid rgba(102, 126, 234, 0.3);
     }
 
     .project-links {
@@ -500,11 +495,12 @@
 
     /* Navegación mejorada */
     nav {
-      background: white;
+      background: linear-gradient(135deg, #1e1e3f 0%, #2d2d5a 100%);
+      border: 1px solid rgba(102, 126, 234, 0.3);
       border-radius: 50px;
       padding: 1rem 2rem;
       margin-bottom: 3rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       text-align: center;
       position: sticky;
       top: 2rem;
@@ -519,6 +515,8 @@
       transition: all 0.3s ease;
       display: inline-block;
       font-weight: 500;
+      color: #e1e5e9;
+      text-decoration: none;
     }
 
     nav a:hover {
@@ -533,32 +531,32 @@
       header h1 {
         font-size: 2.5rem;
       }
-      
+
       header p {
         font-size: 1.1rem;
       }
-      
+
       main {
         padding: 0 1rem 2rem;
       }
-      
+
       section {
         padding: 2rem;
       }
-      
+
       .content-grid {
         grid-template-columns: 1fr;
       }
-      
+
       nav {
         padding: 1rem;
       }
-      
+
       nav a {
         margin: 0.5rem;
         font-size: 0.9rem;
       }
-      
+
       h2 {
         font-size: 1.8rem;
       }
@@ -593,21 +591,22 @@
       <div class="content-grid">
         <div class="content-card">
           <h3>🎯 Perfil Profesional</h3>
-          <p>Ingeniero Civil Industrial con <strong>6 años de experiencia</strong>, 4 de ellos en el rubro de la construcción. 
-             Apasionado por el análisis de datos y su aplicación en la toma de decisiones estratégicas.</p>
+          <p>Ingeniero Civil Industrial con <strong>6 años de experiencia</strong>, 4 de ellos en el rubro de la
+            construcción.
+            Apasionado por el análisis de datos y su aplicación en la toma de decisiones estratégicas.</p>
         </div>
         <div class="content-card">
           <h3>🚀 Especialización Actual</h3>
-          <p>Me especializo en liderar equipos, coordinar proyectos y vincular áreas técnicas y comerciales, 
-             promoviendo siempre la colaboración y la eficiencia operativa.</p>
+          <p>Me especializo en liderar equipos, coordinar proyectos y vincular áreas técnicas y comerciales,
+            promoviendo siempre la colaboración y la eficiencia operativa.</p>
         </div>
         <div class="content-card">
           <h3>📚 Formación Continua</h3>
-          <p>Actualmente me encuentro formándome como <strong>científico de datos</strong> y aprendiendo 
-             continuamente sobre inteligencia artificial y tecnologías emergentes.</p>
+          <p>Actualmente me encuentro formándome como <strong>científico de datos</strong> y aprendiendo
+            continuamente sobre inteligencia artificial y tecnologías emergentes.</p>
         </div>
       </div>
-      
+
       <div class="video-container">
         <iframe width="360" height="640" src="https://www.youtube.com/embed/p4hZwujbz3c" title="Video presentación"
           frameborder="0"
@@ -616,8 +615,387 @@
       </div>
     </section>
 
+    <section id="contacto">
+      <h2>📞 Contacto</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <strong>Email</strong><br>
+            <a href="mailto:dimitrischumilow@gmail.com">dimitrischumilow@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <strong>Teléfono</strong><br>
+            <a href="tel:+56989036081">(+56) 9 89036081</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">💼</div>
+          <div>
+            <strong>LinkedIn</strong><br>
+            <a href="https://www.linkedin.com/in/dschumilow/" target="_blank">linkedin.com/in/dschumilow</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🐱</div>
+          <div>
+            <strong>GitHub</strong><br>
+            <a href="https://github.com/dschumilow" target="_blank">github.com/dschumilow</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="mailto:dimitrischumilow@gmail.com" class="btn">
+          📧 Contactar por Email
+        </a>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <h2>💼 Experiencia Profesional</h2>
+      <div class="content-grid">
+
+        <div class="content-card">
+          <h3>Jefe de Producción</h3>
+          <div class="subtitle">TWH</div>
+          <div class="period">📅 Mar 2025 – Jun 2025</div>
+          <p>Coordinación de proyectos en planta, supervisión de operarios y contratistas, implementación de mejoras
+            productivas y controles de calidad.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Gestión de Equipos</span>
+            <span class="skill-tag">Mejora Continua</span>
+            <span class="skill-tag">Control de Calidad</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Analista de Operaciones</h3>
+          <div class="subtitle">Ecometro Urbanismo S.A.</div>
+          <div class="period">📅 Jul 2024 – Mar 2025</div>
+          <p>Optimización de procesos en gestión de residuos, elaboración de informes, licitaciones
+            técnico-financieras
+            y control de gastos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Análisis de Datos</span>
+            <span class="skill-tag">Optimización</span>
+            <span class="skill-tag">Licitaciones</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Servicios Independientes</h3>
+          <div class="subtitle">Ingeniería, construcción y asesorías</div>
+          <div class="period">📅 Jun 2023 – May 2024</div>
+          <p>Presupuestos, cubicaciones, planificación y remodelaciones. Proyectos destacados: Puerto Octay, Las
+            Trancas,
+            Cristal de Abelli.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Gestión de Proyectos</span>
+            <span class="skill-tag">Presupuestos</span>
+            <span class="skill-tag">Planificación</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Jefe de Planta</h3>
+          <div class="subtitle">Indama – Smartis</div>
+          <div class="period">📅 Nov 2021 – Feb 2023</div>
+          <p>Gestión integral de planta modular, liderazgo de equipos, puesta en marcha de nueva planta en Santiago y
+            participación en feria Edifica.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Liderazgo</span>
+            <span class="skill-tag">Puesta en Marcha</span>
+            <span class="skill-tag">Gestión Integral</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Administrador de Obra</h3>
+          <div class="subtitle">Solar Construcción y Arquitectura Ltda.</div>
+          <div class="period">📅 Ago 2020 – Nov 2021</div>
+          <p>Supervisión de obras, elaboración de presupuestos, coordinación con clientes e ITO, liderazgo de equipos.
+          </p>
+          <div class="skills-container">
+            <span class="skill-tag">Supervisión</span>
+            <span class="skill-tag">Presupuestos</span>
+            <span class="skill-tag">Coordinación</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Jefe de Obra</h3>
+          <div class="subtitle">Proyecto Casa LEE</div>
+          <div class="period">📅 May 2019 – Mar 2020</div>
+          <p>Dirección completa de obra residencial, coordinación de equipos y cumplimiento de cronograma.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Dirección de Obra</span>
+            <span class="skill-tag">Coordinación</span>
+            <span class="skill-tag">Cronogramas</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Consultor Independiente</h3>
+          <div class="subtitle">Chocolates Providencia S.A.</div>
+          <div class="period">📅 Abr 2019</div>
+          <p>Análisis de eficiencia productiva, identificación de pérdidas y propuesta de mejoras en inventario.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Análisis de Procesos</span>
+            <span class="skill-tag">Eficiencia</span>
+            <span class="skill-tag">Consultoría</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Experiencia Internacional</h3>
+          <div class="subtitle">Australia - Working Holiday Visa</div>
+          <div class="period">📅 Ago 2017 – Mar 2019</div>
+          <p>Perfeccionamiento de inglés y experiencia laboral multicultural en construcción, eventos y gastronomía.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Inglés Avanzado</span>
+            <span class="skill-tag">Adaptabilidad</span>
+            <span class="skill-tag">Multiculturalidad</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Ejecutivo de Cuentas</h3>
+          <div class="subtitle">Banco de Chile</div>
+          <div class="period">📅 Ene 2017 – Jul 2017</div>
+          <p>Gestión de cartera de clientes en banca privada, asesoría financiera y cumplimiento de metas comerciales.
+          </p>
+          <div class="skills-container">
+            <span class="skill-tag">Banca Privada</span>
+            <span class="skill-tag">Asesoría Financiera</span>
+            <span class="skill-tag">Gestión Comercial</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>Formación Práctica Universitaria</h3>
+          <div class="subtitle">Prácticas Profesionales y Ayudantías</div>
+          <div class="period">📅 2013 – 2015</div>
+          <p><strong>Práctica II:</strong> Collico S.A. (Analista Comercial) • <strong>Práctica I:</strong> Kaufmann
+            S.A. (Pañol) •
+            <strong>Ayudante:</strong> Química - Universidad del Desarrollo
+          </p>
+          <div class="skills-container">
+            <span class="skill-tag">Análisis Comercial</span>
+            <span class="skill-tag">Logística</span>
+            <span class="skill-tag">Docencia</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="educacion">
+      <h2>🎓 Educación</h2>
+      <div class="content-grid">
+
+        <div class="content-card">
+          <h3>🏛️ Educación Superior</h3>
+          <div class="subtitle">Universidad del Desarrollo</div>
+          <div class="period">📅 2010 – 2016</div>
+          <p><strong>Ingeniero Civil Industrial</strong></p>
+          <p>Formación integral en gestión de operaciones, optimización de procesos, análisis de datos y liderazgo
+            empresarial.
+            Especialización en vinculación de áreas técnicas y comerciales.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Gestión Industrial</span>
+            <span class="skill-tag">Optimización</span>
+            <span class="skill-tag">Análisis de Datos</span>
+            <span class="skill-tag">Liderazgo</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🏫 Educación Básica y Media</h3>
+          <div class="subtitle">Colegio Alcázar de Las Condes</div>
+          <div class="period">📅 1995 – 2009</div>
+          <p><strong>Enseñanza Básica y Media Completa</strong></p>
+          <p>Formación académica integral con énfasis en ciencias exactas y desarrollo de competencias de liderazgo y
+            trabajo en equipo.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Formación Integral</span>
+            <span class="skill-tag">Ciencias</span>
+            <span class="skill-tag">Liderazgo Escolar</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="certificaciones">
+      <h2>🏆 Certificaciones</h2>
+      <div class="content-grid">
+
+        <div class="content-card" style="border-left: 4px solid #ff6b6b;">
+          <h3>🤖 Fundamentos de Inteligencia Artificial</h3>
+          <div class="subtitle">Guayerd & IBM</div>
+          <div class="period">📅 Sept 2025 – Actualidad</div>
+          <p>Formación avanzada en conceptos fundamentales de IA, machine learning, y aplicaciones empresariales de
+            inteligencia artificial.</p>
+          <div class="skills-container">
+            <span class="skill-tag">IA</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">IBM Watson</span>
+          </div>
+        </div>
+
+        <div class="content-card" style="border-left: 4px solid #4ecdc4;">
+          <h3>📊 Data Science</h3>
+          <div class="subtitle">Beca Talento Digital SENCE</div>
+          <div class="period">📅 Jun 2025 – Sept 2025</div>
+          <p>Programa integral de formación en ciencia de datos, incluyendo Python, machine learning, análisis
+            estadístico y visualización de datos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">ML</span>
+            <span class="skill-tag">Estadística</span>
+            <span class="skill-tag">Visualización</span>
+          </div>
+        </div>
+
+        <div class="content-card" style="border-left: 4px solid #45b7d1;">
+          <h3>📈 Fundamentos Data Analytics</h3>
+          <div class="subtitle">Guayerd & IBM</div>
+          <div class="period">📅 Jul 2024 – Nov 2024</div>
+          <p>Certificación en análisis de datos, herramientas de visualización y metodologías para la toma de decisiones
+            basada en datos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Analytics</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Data Visualization</span>
+          </div>
+        </div>
+
+        <div class="content-card" style="border-left: 4px solid #96ceb4;">
+          <h3>📋 Excel Avanzado</h3>
+          <div class="subtitle">Certificación Profesional</div>
+          <div class="period">📅 2015</div>
+          <p>Dominio avanzado de Excel incluyendo macros, análisis de datos, tablas dinámicas y automatización de
+            procesos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">Macros</span>
+            <span class="skill-tag">Automatización</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="habilidades-tecnicas">
+      <h2>💻 Habilidades Técnicas</h2>
+      <div class="content-grid">
+
+        <div class="content-card">
+          <h3>🐍 Lenguajes de Programación</h3>
+          <p>Dominio de lenguajes especializados en análisis de datos y desarrollo de aplicaciones.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML/CSS</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>📊 Herramientas de Análisis</h3>
+          <p>Plataformas profesionales para procesamiento, análisis y visualización de datos empresariales.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Excel Avanzado</span>
+            <span class="skill-tag">Power Query</span>
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Looker Studio</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🔧 Desarrollo y Productividad</h3>
+          <p>Entornos de desarrollo y herramientas de productividad para gestión de proyectos técnicos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Visual Studio Code</span>
+            <span class="skill-tag">Jupyter Notebooks</span>
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">Office 365</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🤖 Machine Learning & IA</h3>
+          <p>Frameworks y librerías especializadas en inteligencia artificial y análisis predictivo.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Matplotlib</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="habilidades-profesionales">
+      <h2>🌟 Competencias y Habilidades Personales</h2>
+      <div class="content-grid">
+
+        <div class="content-card">
+          <h3>🌍 Idiomas</h3>
+          <p>Competencias lingüísticas que facilitan la comunicación en entornos multiculturales.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Español (Nativo)</span>
+            <span class="skill-tag">Inglés (B2-B1)</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🤝 Competencias Profesionales</h3>
+          <p>Habilidades blandas desarrolladas a través de experiencia práctica en liderazgo y gestión de equipos.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Comunicación Efectiva</span>
+            <span class="skill-tag">Trabajo en Equipo</span>
+            <span class="skill-tag">Liderazgo</span>
+            <span class="skill-tag">Pensamiento Estratégico</span>
+            <span class="skill-tag">Gestión del Tiempo</span>
+            <span class="skill-tag">Aprendizaje Continuo</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🏃‍♂️ Deportes y Actividades</h3>
+          <p>Actividades que desarrollan disciplina, estrategia y trabajo en equipo.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Tenis</span>
+            <span class="skill-tag">Deportes Náuticos</span>
+            <span class="skill-tag">Actividad Física</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <h3>🎯 Intereses Personales</h3>
+          <p>Áreas de interés que complementan el perfil profesional y fomentan la creatividad.</p>
+          <div class="skills-container">
+            <span class="skill-tag">Gastronomía</span>
+            <span class="skill-tag">Mecánica Automotriz</span>
+            <span class="skill-tag">Construcción</span>
+            <span class="skill-tag">Desarrollo Personal</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <section id="proyectos">
-      <h2>Proyectos de Ciencia de Datos</h2>
+      <h2>🚀 Proyectos de Ciencia de Datos</h2>
       <p>Portafolio completo de proyectos desarrollados aplicando <strong>Machine Learning</strong>, <strong>Deep
           Learning</strong>
         y técnicas avanzadas de análisis de datos. Cada proyecto incluye documentación técnica completa y código
@@ -795,212 +1173,6 @@
 
       </div>
 
-      <!-- Sección de competencias técnicas destacadas -->
-      <div
-        style="margin-top: 3rem; padding: 2rem; background: #f0f8ff; border-radius: 12px; border-left: 4px solid #007acc;">
-        <h3 style="margin-top: 0; color: #1e1e1e;">🎯 Competencias Técnicas Demostradas</h3>
-        <div
-          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
-          <div>
-            <strong>🤖 Machine Learning</strong><br>
-            <span style="color: #666; font-size: 0.9rem;">Algoritmos supervisados y no supervisados, validación cruzada,
-              optimización</span>
-          </div>
-          <div>
-            <strong>🧠 Deep Learning</strong><br>
-            <span style="color: #666; font-size: 0.9rem;">Redes neuronales, TensorFlow/Keras, procesamiento de lenguaje
-              natural</span>
-          </div>
-          <div>
-            <strong>📊 Análisis de Datos</strong><br>
-            <span style="color: #666; font-size: 0.9rem;">EDA, visualización avanzada, estadística inferencial</span>
-          </div>
-          <div>
-            <strong>🔧 Ingeniería de Datos</strong><br>
-            <span style="color: #666; font-size: 0.9rem;">ETL, pipeline automatizados, calidad de datos</span>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <section id="contacto">
-      <h2>📞 Contacto</h2>
-      <div class="contact-info">
-        <div class="contact-item">
-          <div class="contact-icon">📧</div>
-          <div>
-            <strong>Email</strong><br>
-            <a href="mailto:dimitrischumilow@gmail.com">dimitrischumilow@gmail.com</a>
-          </div>
-        </div>
-        
-        <div class="contact-item">
-          <div class="contact-icon">📱</div>
-          <div>
-            <strong>Teléfono</strong><br>
-            <a href="tel:+56989036081">(+56) 9 89036081</a>
-          </div>
-        </div>
-        
-        <div class="contact-item">
-          <div class="contact-icon">💼</div>
-          <div>
-            <strong>LinkedIn</strong><br>
-            <a href="https://www.linkedin.com/in/dschumilow/" target="_blank">linkedin.com/in/dschumilow</a>
-          </div>
-        </div>
-        
-        <div class="contact-item">
-          <div class="contact-icon">🐱</div>
-          <div>
-            <strong>GitHub</strong><br>
-            <a href="https://github.com/dschumilow" target="_blank">github.com/dschumilow</a>
-          </div>
-        </div>
-      </div>
-      
-      <div style="text-align: center; margin-top: 2rem;">
-        <a href="mailto:dimitrischumilow@gmail.com" class="btn">
-          📧 Contactar por Email
-        </a>
-      </div>
-    </section>
-
-    <section id="experiencia">
-      <h2>Experiencia</h2>
-      <div style="border-left: 3px solid #007acc; margin-left: 18px; padding-left: 24px;">
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">🏭</span>
-          <strong>Jefe de Producción · TWH</strong><br>
-          <span style="color:#666;">📅 Mar 2025 – Jun 2025</span><br>
-          Coordinación de proyectos en planta, supervisión de operarios y contratistas, implementación de mejoras
-          productivas y controles de calidad.
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">📊</span>
-          <strong>Analista de Operaciones · Ecometro Urbanismo S.A.</strong><br>
-          <span style="color:#666;">📅 Jul 2024 – Mar 2025</span><br>
-          Optimización de procesos en gestión de residuos, elaboración de informes, licitaciones técnico-financieras
-          y control de gastos.
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">🛠️</span>
-          <strong>Servicios Independientes · Ingeniería, construcción y asesorías</strong><br>
-          <span style="color:#666;">📅 Jun 2023 – May 2024</span><br>
-          Presupuestos, cubicaciones, planificación y remodelaciones. Proyectos: Puerto Octay, Las Trancas, Cristal
-          de Abelli.
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">🏭</span>
-          <strong>Jefe de Planta · Indama – Smartis</strong><br>
-          <span style="color:#666;">📅 Nov 2021 – Feb 2023</span><br>
-          Gestión integral de planta modular, liderazgo de equipos, puesta en marcha de nueva planta en Santiago y
-          participación en feria Edifica.
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">🏗️</span>
-          <strong>Administrador de Obra · Solar Construcción y Arquitectura Ltda.</strong><br>
-          <span style="color:#666;">📅 Ago 2020 – Nov 2021</span><br>
-          Supervisión de obras, elaboración de presupuestos, coordinación con clientes e ITO, liderazgo de equipos.
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">🏠</span>
-          <strong>Jefe de Obra · Proyecto Casa LEE</strong><br>
-          <span style="color:#666;">📅 May 2019 – Mar 2020</span><br>
-          Dirección completa de obra residencial, coordinación de equipos y cumplimiento de cronograma.
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">💡</span>
-          <strong>Consultor Independiente · Chocolates Providencia S.A.</strong><br>
-          <span style="color:#666;">📅 Abr 2019</span><br>
-          Análisis de eficiencia productiva, identificación de pérdidas y propuesta de mejoras en inventario.
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">🇦🇺</span>
-          <strong>Curso de Inglés y Visa W&H · Australia</strong><br>
-          <span style="color:#666;">📅 Ago 2017 – Mar 2019</span><br>
-          Perfeccionamiento de inglés y experiencia laboral en construcción, eventos y gastronomía.
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">💼</span>
-          <strong>Ejecutivo de Cuentas · Banco de Chile</strong><br>
-          <span style="color:#666;">📅 Ene 2017 – Jul 2017</span><br>
-          Gestión de cartera de clientes en banca privada, asesoría financiera y cumplimiento de metas.
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">📝</span>
-          <strong>Práctica Profesional II · Collico S.A. (Analista Comercial)</strong><br>
-          <span style="color:#666;">📅 2015</span>
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">📝</span>
-          <strong>Práctica Profesional I · Kaufmann S.A. (Pañol)</strong><br>
-          <span style="color:#666;">📅 2014</span>
-        </div>
-        <div style="margin-bottom: 2em; position: relative;">
-          <span style="position: absolute; left: -38px; top: 0;">🧪</span>
-          <strong>Ayudante de Química · Universidad del Desarrollo</strong><br>
-          <span style="color:#666;">📅 2013 – 2014</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="educacion">
-      <h2>Educación</h2>
-      <ul style="list-style:none; padding-left:0;">
-        <li>
-          <strong>Universidad del Desarrollo</strong><br>
-          Ingeniero Civil Industrial<br>
-          <span style="color:#666;">2010 – 2016</span>
-        </li>
-        <li style="margin-top:1em;">
-          <strong>Colegio Alcázar de Las Condes</strong><br>
-          Ed. básica y media<br>
-          <span style="color:#666;">1995 – 2009</span>
-        </li>
-      </ul>
-    </section>
-
-    <section id="certificaciones">
-      <h2>Certificaciones</h2>
-      <ul style="list-style:none; padding-left:0;">
-        <li>
-          <strong>Fundamentos de Inteligencia Artificial (Guayerd & IBM)</strong><br>
-          <span style="color:#666;">Sept 2025 – Actualidad</span>
-        </li>
-        <li style="margin-top:1em;">
-          <strong>Data Science - Beca TD SENCE</strong><br>
-          <span style="color:#666;">Jun 2025 – Sept 2025</span>
-        </li>
-        <li style="margin-top:1em;">
-          <strong>Fundamentos Data Analytics (Guayerd & IBM)</strong><br>
-          <span style="color:#666;">Jul 2024 – Nov 2024</span>
-        </li>
-        <li style="margin-top:1em;">
-          <strong>Curso Excel Avanzado</strong><br>
-          <span style="color:#666;">2015</span>
-        </li>
-      </ul>
-    </section>
-
-    <section id="habilidades-tecnicas">
-      <h2>Habilidades Técnicas</h2>
-      <ul style="list-style:none; padding-left:0;">
-        <li><strong>Lenguajes:</strong> Python, SQL</li>
-        <li><strong>Programas:</strong> Excel, Power Query, Power BI, Looker Studio, Visual Code</li>
-      </ul>
-    </section>
-
-    <section id="habilidades-profesionales">
-      <h2>Habilidades Profesionales y Personales</h2>
-      <ul style="list-style:none; padding-left:0;">
-        <li><strong>Idiomas:</strong> Español (nativo), Inglés (B2-B1)</li>
-        <li><strong>Competencias:</strong> Comunicación efectiva, trabajo en equipo, facilitador, pensamiento
-          estratégico, liderazgo, gestión del tiempo, aprendizaje continuo</li>
-        <li><strong>Deportes:</strong> Tenis, deportes náuticos</li>
-        <li><strong>Intereses:</strong> Gastronomía, mecánica automotriz, construcción, desarrollo personal</li>
-      </ul>
     </section>
   </main>
 
