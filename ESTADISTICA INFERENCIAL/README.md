@@ -10,7 +10,7 @@ La Ley de los Grandes Números establece que, al aumentar el tamaño de la muest
 
 ### 📷 Visualización
 
-![Demostración de la Ley de los Grandes Números](./img/ley_grandes_numeros.png)
+![Demostración de la Ley de los Grandes Números](./img/Demostracion LGN.png)
 
 ### 🔍 Objetivos del ejercicio
 
